@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+![Screenshot 2023-07-31 124050](https://github.com/Eshan091/React-Portfolio-Eshan/assets/124865881/f34ffa37-23b8-41ec-afb4-68aa462cc7ff)
+![Screenshot 2023-08-01 125524](https://github.com/Eshan091/React-Portfolio-Eshan/assets/124865881/ba1794cf-6a2e-4a69-86d7-4bed0c5f724e)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
