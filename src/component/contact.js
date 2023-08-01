@@ -14,10 +14,19 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_1bvj2xp', 'template_qgrfiq4', form.current, 'K6qlCl3M5TNekPBhE')
-      alert('Your Message has been sent successfully to ESHAN SRIVASTAVA  😊');
-      e.target.reset();
+  
+    console.log("Attempting to send email...");
+  
+    emailjs
+      .sendForm('service_1bvj2xp', 'template_qgrfiq4', form.current, 'K6qlCl3M5TNekPBhE')
+      .then((result) => {
+        console.log("Email sent successfully:", result);
+        alert('Thank you for reaching out to me,I will get back to you soon !  😊');
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
   return (
     <section id='contact'>
@@ -29,14 +38,13 @@ const Contact = () => {
             <MdOutlineEmail className='contact_option_icon'/>
              <h4>Email</h4>
              <h5>eshan.srivastava24@gmail.com</h5>
-             <a href="mailto:eshan.srivastava24@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
+             <a href="mailto:eshan.srivastava24@gmail.com" target="_blank" rel="noreferrer" >Send a message</a>
            </article>
            <article className="contact_option">
             <BsWhatsapp className='contact_option_icon'/>
              <h4>Whatsapp</h4>
              <h4>8303519366</h4>
-             <a href="https://api.Whatsapp.com/send?phone+918303519366">Send a message</a>
-           </article>
+             <a href="https://api.whatsapp.com/send?phone=918303519366" target='_blank' rel='noreferrer' >Send a message</a>           </article>
         </div>
 
         <form ref={form} onSubmit={sendEmail} data-aos="fade-down" >

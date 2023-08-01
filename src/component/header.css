@@ -90,9 +90,9 @@ header .header_container{
     header{
         height: 100vh;
       }
-      .header_container{
-        top: 3%;
-      }
+      /* .header_container{
+        
+      } */
       .header_socials,.scroll_down{
        display: none;
       }
