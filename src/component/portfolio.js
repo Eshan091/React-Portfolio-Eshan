@@ -51,7 +51,7 @@ const Portfolio = () => {
            
           />
           </p>
-          <a href="https://github.com"  target='_blank'  rel="noreferrer" className='btn btn-primary '>GitHub</a>
+          <a href="https://github.com/Eshan091/React-Portfolio-Eshan"  target='_blank'  rel="noreferrer" className='btn btn-primary '>GitHub</a>
       </article>
       <article className='portfolio_item' data-aos="fade-down">
          <div className="portfolio_item-image">
